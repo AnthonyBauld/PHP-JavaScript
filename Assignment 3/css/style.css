@@ -1,0 +1,238 @@
+/*
+* I, Anthony. Bauld, certify that this material is my original work.  No other person's work has been used without due acknowledgement.   
+* Due: November 11th, 2021.
+*
+* Creates the styling for the HTML page using CSS.
+*/
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+/* 
+     Sets the feature for header that change, color, margin bottom, font family, font size, font style.
+*/
+ header {
+     color: white;
+     margin-bottom: 10px;
+     font-family: monospace;
+     font-size: 35px;
+     font-style: italic;
+}
+/* 
+     Sets the feature for header <p> that change, text alignment, color, margin bottom, font family, font size, and font style.
+*/
+ header p {
+     text-align: center;
+     color: white;
+     margin-bottom: 5px;
+     font-family: monospace;
+     font-size: 15px;
+     font-style: italic;
+}
+/*
+     Sets the body font to Arial.
+*/
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+}
+/*
+     Sets the feature for section that change, height (viewpoint), width (viewpoint), background color, display, alignment of items,
+     justifed content, flex direction.
+*/
+ section {
+     height: 100vh;
+     width: 100vw;
+     background-color: #1a1d29;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+/*
+     Sets the feature for formbox that change, width, max width, margin, padding, box shadow, background color, border radius, and margin bottom.
+*/
+ .formbox {
+     width: 90%;
+     max-width: 550px;
+     margin: 0 auto;
+     padding: 20px;
+     box-shadow: 0px 0px 15px gray;
+     background-color: whitesmoke;
+     border-radius: 8px;
+     margin-bottom: 20px;
+}
+/*
+     Sets the feature for gamebox that change, width, max width, margin, padding, box shadow, background color, border radius, and margin bottom.
+*/
+ .gamebox {
+     width: 90%;
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 20px;
+     box-shadow: 0px 0px 15px gray;
+     background-color: whitesmoke;
+     border-radius: 8px;
+     margin-bottom: 20px;
+}
+/*
+     Sets the feature for styleform that change, width, margin top, and font style.
+*/
+ .styleform {
+     width: 100%;
+     margin-top: 25px;
+     font-size: 18px;
+}
+/*
+     Sets the feature for styleform input that change, width, padding, font size, border, and margin top.
+*/
+ .styleform input {
+     width: 100%;
+     padding: 5px;
+     font-size: 18px;
+     border: 1px solid #808080;
+     margin-top: 5px;
+}
+/*
+     Sets the feature for input "color" that change, the border, width, height, and padding.
+*/
+ input[type="color"] {
+     border: 1px solid #808080;
+     width: 100%;
+     height: 40px;
+     padding: 1px;
+}
+/*
+     Sets the feature for button "submit" that change, the width, border, outline, padding, font size, border radius, font style, color, 
+     text alignment, cursor, and margin top.
+*/
+ button[type="submit"] {
+     width: 100%;
+     border: none;
+     outline: none;
+     padding: 25px;
+     font-size: 24px;
+     border-radius: 8px;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #1a1d29;
+     text-align: center;
+     cursor: pointer;
+     margin-top: 25px;
+}
+/*
+     When the user hovers over the button, the button:hover "submit" is set to change the backdrop to lightgray.
+*/
+ button[type="submit"]:hover {
+     background-color: lightgray;
+}
+/*
+    Sets the feature for help that change, text alignment, padding, font size, and font family.
+*/
+ .help {
+     text-align: center;
+     padding: 25px;
+     font-size: 18px;
+     font-family: monospace;
+}
+/*
+     Sets the feature for accordion that change, the background color, color, cursor, padding, width, text alignment, border, 
+     outline, transition, and margin bottom.
+*/
+ .accordion {
+     background-color: rgb(231, 230, 230);
+     color: rgb(97, 96, 96);
+     cursor: pointer;
+     padding: 15px;
+     width: 100%;
+     text-align: left;
+     border: none;
+     outline: none;
+     transition: 0.6s;
+     margin-bottom: 5px;
+}
+/*
+     When the user hovers over the accordion, the accordion:hover 'active' is set to change the backdrop to white.
+*/
+ .active, .accordion:hover {
+     background-color: white;
+}
+/*
+      Sets the feature for div helppanel that change, the padding, background color, max height, overflow, transition, opacity and margin bottom.
+*/
+ div.helppanel {
+     padding: 0, 20px;
+     background-color: whitesmoke;
+     max-height: 0;
+     overflow: hidden;
+     transition: 0.6s ease-in-out;
+     opacity: 0;
+     margin-bottom: 15px;
+}
+/*
+     Sets the opacity of the div.helppanel.show to 1 (shows the dropdown) and the maximum height to 500 pxs.
+*/
+ div.helppanel.show {
+     opacity: 1;
+     max-height: 500px;
+}
+/*
+     Sets the ID of gamebox "hide2" to display none.
+*/
+ #hide2 {
+     display: none;
+}
+/*
+     Sets the max image size to 128pxs by 128pxs.
+*/
+ img {
+     max-width: 128px;
+     height: 128px;
+}
+/*
+      Sets the feature for score that change, margin, border, border raidus, text alignment, width, color, font size, padding, and font style.
+*/
+ .score {
+     margin: 20px auto;
+     border: 5px solid #1a1d29;
+     border-radius: 4px;
+     text-align: center;
+     width: 200px;
+     color: #1a1d29;
+     font-size: 40px;
+     padding: 15px 20px;
+     font-family: monospace;
+}
+/*
+     Sets the feature for result that change, the padding, font size, text alignment, font style, and font weight.
+*/
+ .result {
+     padding: 10px;
+     font-size: 30px;
+     text-align: center;
+     font-family: monospace;
+     font-weight: bold;
+}
+/*
+     Sets the rockpaperscissors to have a 50pxs 0 margin with the text aligned to the center.
+*/
+ .rockpaperscissors {
+     margin: 50px 0;
+     text-align: center;
+}
+/*
+     Sets the feature for game that change, the border, margin, padding and display.
+*/
+ .game {
+     border: 5px solid #1a1d29;
+     margin: 0 15px;
+     padding: 10px;
+     display: inline-block;
+}
+/*
+     The background of the game transforms to a light grey when it is hovered over.
+*/
+ .game:hover {
+     cursor: pointer;
+     background-color: lightgray;
+}
+ 
