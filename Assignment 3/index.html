@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <!-- 
+        * I, Anthony. Bauld, certify that this material is my original work.  No other person's work has been used without due acknowledgement.   
+        * Due: November 11th, 2021.
+        *
+        * The user is requested to provide their name, age, and favorite color.
+     -->
+<head>
+    <title>Assignment 3 - Anthony. Bauld</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/rock-paper-scissors.js"></script>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h1>Rock, Paper, Scissors!</h1>
+            <p>by Anthony. Bauld</p>
+        </header>
+        <div id="hide" class="formbox">
+            <form action="" method="POST" id="formID">
+            <div class="styleform">
+              <label for="name">Name:</label>
+              <input type="name" id="name" required autofocus>
+            </div>
+            <div class="styleform">
+              <label for="age">Age:</label>
+              <input type="age" id="age" required>
+            </div>
+            <div class="styleform">
+              <label for="color">Favorite Color:</label>
+              <input type="color" id="color">
+            </div>
+            <button id="button" type="submit">Play Now!</button>
+          </form>
+        </div>
+        <div id="hide2" class="gamebox">
+            <form action="" method="POST" id="formID2">
+                <div class="score">
+                    <span id="userscore">0</span>:<spam id="computerscore">0</spam>
+                </div>
+                <div id="result" class="result">
+                    <p></p>
+                </div>
+                <div class="rockpaperscissors">
+                    <div class="game" id="rock">
+                        <img src="img/rock.png" alt="">
+                    </div>
+                    <div class="game" id="paper">
+                        <img src="img/paper.png" alt="">              
+                    </div>
+                    <div class="game" id="scissors">
+                        <img src="img/scissors.png" alt="">              
+                    </div>
+                </div>
+                <div id="help" class="help">
+                    <h3>Help</h3>
+                    <br>
+                    <p class="accordion">1. What is Rock Paper Scissor's?</p>
+                    <div class="helppanel">Rock, paper, scissors is a hand game in which each participant produces one of three shapes at the same time. It is normally played by two individuals. "Rock," "Paper," and "Scissors" are the three forms. A draw or a victory for one player and a defeat for the other are the only two possibilities.</div>
+                    <p class="accordion">2. How do I play Rock Paper Scissor's?</p>
+                    <div class="helppanel">Choose one of the three symbols above, and the computer will choose a winner at random using rng. It will display a message and add +1 to either side depending on who wins. <br><br>User (Left) / Computer (Right)</div>
+                    <p class="accordion">3. How will I know if I won or lost?</p>
+                    <div class="helppanel">A message will display when either you or the computer wins the game of Rock, Paper, Scissors!.</div>
+                </div>
+                <button id="button" type="submit" onclick="history.back()">Restart Game</button>
+            </form>
+        </div>
+      </section>
+</body>
+</html>
