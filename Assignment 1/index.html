@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <!-- 
+        * Anthony. Bauld (000754334).
+        * September 24th, 2021.
+        *
+        * The user is asked for their name, how many fortune cookies they want, the color of the cookies, 
+        * and their lucky number range (min and max) in this software.
+     -->
+<head>
+    <title>Assignment 1 - Anthony. Bauld</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 
+            Creates different features within the body of the page like font style,
+            font weight, background color, and displays within the middle of the screen.
+        */
+        body
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+            font-weight: normal;
+            background-color:beige;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* 
+            Creates a text box that will hold the form. This form will text user inputs
+            like the username, fortune cookies, color, and lucky numbers. 
+        */
+        .box
+        {
+            width: 100%;
+            max-width: 600px;
+            margin: 0, auto;
+            padding: 20px;  
+            box-shadow: 0px 0px 20px black;
+            background-color: blanchedalmond;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        /* 
+            Styles the title within the box by changing the font style, font weight,
+            and font size. It then displays this within the center of the box.
+        */
+        .title
+        {
+            font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            font-size: 30px;
+        }
+        /* 
+            Styles the username form bars within the text box, margins the text and bar
+            30 pixels down from title, and sets the size of the text.  
+        */
+        .form
+        {
+            width: 100%;
+            margin-top: 40px;
+            font-size: 23px;
+        }
+        /* 
+            Styles the username form bars within the text box, margins the text and bar
+            30 pixels down from title, and sets the size of the text.  
+        */
+        .form input, .form textarea
+        {
+            width: 100%;
+            padding: 0px;
+            font-size: 23px;
+        }
+        /* 
+            Styles the colors form bars within the text box, margins the text and bar
+            30 pixels down from fortune cookies, and sets the size of the text.  
+        */
+        .color
+        {
+            width: 100%;
+            margin-top: 30px;
+            font-size: 23px;
+        }
+        /* 
+            Styles the Lucky Number form bars within the text box, margins the text and bar
+            30 pixels down from colors, and sets the size of the text.  
+        */
+        .number, .number input
+        {
+            width: 100%;
+            margin-top: 30px;
+            font-size: 23px;
+        }
+        /* 
+            Styles the submit button by setting the width, border, font size,
+            font style, font weight, color, background color, and aligns the text
+            within the center of the page.
+        */
+        button[type="submit"]
+        {
+            width: 100%;
+            border: none;
+            padding: 20px;
+            font-size: 23px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+            font-weight: bold;
+            background-color:floralwhite;
+            color:black;
+            text-align: center;
+            margin-top: 20px;
+        }
+        /* 
+            Creates a hover over the submit button so when a user hovers the mouse
+            to click the button it changes the background color to beige. 
+        */
+        button[type="submit"]:hover
+        {
+            background-color: beige;
+        }    
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <form action="processcookies.php" method="GET">
+            <div class="title">
+                <p>Assignment 1</p>
+            </div>
+            <div class="form">
+                <label 
+                    for="firstlast">Name
+                </label>
+                <input type="text" name="username"  autofocus required>
+            </div>
+            <div class="form">
+                <label 
+                    for="cookies">How many fortune cookies?
+                </label>
+                <input type="number" min="0" max="100" name="fortunecookies" required>
+            </div>
+            <div class ="color">
+                <label 
+                    for="color">Which color would you like?&nbsp;
+                </label>
+                <input type="color" name="color">
+            </div>
+            <div class="number">
+                <label 
+                    for="lucky">What is your lucky number? (Min, Max)
+                </label>
+                <input type="number" min="0" name="luckynumber" required>
+                <input type="number" min="0" max="99" name="luckynumber2" required>
+            </div>
+            <button 
+                type="submit">Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
