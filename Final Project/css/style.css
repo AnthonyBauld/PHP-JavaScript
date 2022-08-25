@@ -1,0 +1,186 @@
+/**
+    * I, Anthony. Bauld, certify that this material is my original work.  No other person's work has been used without due acknowledgement.   
+    * December 10th, 2021.
+    *
+     * Creates the styling for the index and signup page using CSS.
+*/
+
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+/* 
+     Sets the feature for header that change, color, margin bottom, font family, font size, font style.
+*/
+ header {
+     color: white;
+     margin-bottom: 10px;
+     font-family: monospace;
+     font-size: 35px;
+     font-style: italic;
+}
+/* 
+     Sets the feature for header <p> that change, text alignment, color, margin bottom, font family, font size, and font style.
+*/
+ header p {
+     text-align: center;
+     color: white;
+     margin-bottom: 5px;
+     font-family: monospace;
+     font-size: 15px;
+}
+/*
+     Sets the body font to Arial.
+*/
+ body {
+     font-family:  Arial, Helvetica, sans-serif;
+}
+p {
+     margin-top: 10px;
+     color: white;
+}
+/*
+     Sets the feature for section that change, height (viewpoint), width (viewpoint), background color, display, alignment of items,
+     justifed content, flex direction.
+*/
+ section {
+     height: 100vh;
+     width: 100vw;
+     background-color: #1A1C24;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+/*
+     Sets the feature for login-form that change, width, max width, margin, padding, box shadow, background color, border radius, and margin bottom.
+*/
+ .login-form {
+     width: 90%;
+     max-width: 550px;
+     margin: 0 auto;
+     padding: 20px;
+     box-shadow: 0px 0px 15px #2B2C37;
+     background-color: #2B2C37;
+     border-radius: 8px;
+     margin-bottom: 20px;
+}
+/*
+     Sets the feature for signin-form that change, width, max width, margin, padding, box shadow, background color, border radius, and margin bottom.
+*/
+.signin-form {
+     width: 90%;
+     max-width: 550px;
+     margin: 0 auto;
+     padding: 20px;
+     box-shadow: 0px 0px 15px #2B2C37;
+     background-color: #2B2C37;
+     border-radius: 8px;
+     margin-bottom: 20px;
+}
+/*
+     Sets the feature for styleform that change, width, margin top, and font style.
+*/
+.styleform {
+     width: 100%;
+     margin-top: 25px;
+     font-size: 18px;
+     border-radius: 4px;
+}
+/*
+     Sets the feature for styleform input that change, width, padding, font size, border, and margin top.
+*/
+ .styleform input {
+     width: 100%;
+     height: 40px;
+     padding: 5px;
+     font-size: 18px;
+     margin-top: 10px;
+     border: 1px solid #2B2C37;
+     border-radius: 7px;
+     color: white;
+     text-indent: 2.5%;
+     font-family:  Arial, Helvetica, sans-serif;
+}
+/*
+     Sets the feature for styleform input "text" to change the color, and background color.
+*/
+.styleform input[type="text"] {
+     color: white;
+     background-color: #141622;
+}
+/*
+     Sets the feature for styleform input "password" to change the color, and background color.
+*/
+.styleform input[type="password"] {
+     color: white;
+     background-color: #141622;
+}
+/*
+     Sets the feature for styleform input "email" to change the color, and background color.
+*/
+.styleform input[type="email"] {
+     color: white;
+     background-color: #141622;
+}
+/*
+     Sets the feature for register text to change the text alignment, color, margin top, font style, and font size.
+*/
+.register {
+     text-align: center;
+     color: white;
+     margin-top: 10px;
+     font-family:  Arial, Helvetica, sans-serif;
+     font-size: 15px;
+}
+/*
+     Sets the feature for a.link to change the color to white.
+*/
+a:link { 
+     color: white; 
+}
+/*
+     Sets the feature for a.visited to change the color to white.
+*/
+a:visited { 
+     color: white; 
+}
+/*
+     Sets the feature for button "button" that change, the width, border, outline, padding, font size, border radius, font style, color, 
+     text alignment, cursor, and margin top.
+*/
+button[type="submit"] {
+     width: 100%;
+     border: none;
+     outline: none;
+     padding: 20px;
+     font-size: 24px;
+     border-radius: 8px;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #1a1d29;
+     text-align: center;
+     cursor: pointer;
+     margin: center;
+     margin-top: 10px;
+     background-image: radial-gradient( 125% 125%, #FEE61A, black);
+}
+/*
+     Sets the feature for button "button" that change, the width, border, outline, padding, font size, border radius, font style, color, 
+     text alignment, cursor, and margin top.
+*/
+button[type="button"] {
+     width: 100%;
+     border: none;
+     outline: none;
+     padding: 20px;
+     font-size: 24px;
+     border-radius: 8px;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #1a1d29;
+     text-align: center;
+     cursor: pointer;
+     margin: center;
+     margin-top: 10px;
+     background-image: radial-gradient( 125% 125%, #FEE61A, black);
+}
