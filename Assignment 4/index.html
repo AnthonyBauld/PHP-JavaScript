@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+        * I, Anthony. Bauld, certify that this material is my original work.  No other person's work has been used without due acknowledgement.   
+        * Due: November 26th, 2021.
+        *
+        * The user is asked to enter the item and quantity amount that they want to add to their shopping list.
+     -->
+
+<head>
+	<title>Assignment 4 - Anthony. Bauld</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/shoppinglist.js"></script>
+</head>
+
+<body>
+	<section>
+		<header>
+			<h1>My Shopping List</h1>
+			<p>by Anthony. Bauld</p>
+		</header>
+		<div id="hide" class="formbox">
+			<form action="additems.php" method="POST" id="formID">
+				<div class="styleform">
+					<input type="item" id="item" placeholder="Enter Item" required autofocus>
+					<input type="number" id="quantity" value="1" required> </div>
+				<div id="list" class="list"> </div>
+				<button id="button" type="button">Add</button>
+			</form>
+		</div>
+	</section>
+</body>
+
+</html>
